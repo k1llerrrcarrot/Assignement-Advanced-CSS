@@ -1,0 +1,80 @@
+/* Part 3 */
+
+.socials {
+    color: $testimonial-bg-color;
+
+    position: fixed;
+    top: 60%;
+    right: -220px;
+    z-index: 3;
+
+    & a {
+        color: $testimonial-bg-color;
+    }
+    
+
+    &__blog {
+        background-color: $blog-bg-color;
+        padding: $socials-padding;
+
+        @include socialsTransition;
+
+        &::before {
+            @include iconsStyle;
+            font: var(--fa-font-solid);
+            content: "\f5fc";
+        }
+    }
+
+    &__twitter {
+        background-color: $twitter-bg-color;
+        padding: $socials-padding;
+
+        @include socialsTransition;
+
+        &::before {
+            @include iconsStyle;
+            font: var(--fa-font-brands);
+            content: "\f099";
+        }
+    }
+
+    &__linkedin {
+        background-color: $linkedin-bg-color;
+        padding: $socials-padding;
+
+        @include socialsTransition;
+
+        &::before {
+            @include iconsStyle;
+            font: var(--fa-font-brands);
+            content: "\f0e1";
+        }
+    }
+
+    &__facebook {
+        background-color: $facebook-bg-color;
+        padding: $socials-padding;
+
+        @include socialsTransition;
+
+        &::before {
+            @include iconsStyle;
+            font: var(--fa-font-brands);
+            content: "\f39e";
+        }
+    }
+
+    &__github {
+        background-color: $github-bg-color;
+        padding: $socials-padding;
+
+        @include socialsTransition;
+
+        &::before {
+            @include iconsStyle;
+            font: var(--fa-font-brands);
+            content: "\f09b";
+        }
+    }
+}

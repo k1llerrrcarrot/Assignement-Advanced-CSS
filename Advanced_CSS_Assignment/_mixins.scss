@@ -1,0 +1,22 @@
+@mixin defineGrid($height, $width, $size) {
+    display: grid;
+    grid-template: repeat($height, $size) / repeat($width, $size);
+}
+
+@mixin iconsStyle {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    margin-right: 30px;
+    transform: scale(115%);
+}
+
+@mixin socialsTransition {
+    transition-duration: 450ms;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+
+    &:hover {
+        transform: translateX(-220px);
+    }
+}
